@@ -1,0 +1,57 @@
+.xacminh{
+    width: 500px;
+    height: 600px;
+    border: 1px solid grey;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background: rgba(35, 84, 243, 0.5);
+}
+.h2{
+    color: grey;
+    font-family: sans-serif;
+}
+input{
+    width: 60%;
+    height: 50px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    border: 1px solid grey;
+    padding-left: 20px;
+}
+button{
+    width: 65%;
+    height: 50px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    border: none;
+    background-color: rgb(0, 179, 255);
+    margin-bottom: 20px;
+    color: aliceblue;
+    font-family: 'Arial', sans-serif;
+}
+button :hover{
+    font-size: 15px;
+}
+table{
+    width: 100%;
+}
+table, td, th {
+    border: 1px solid #333;
+    border-collapse: collapse;
+}
+td, th {
+    padding: 6px 10px;
+}
+table thead th{
+    text-align: left;
+}
+.bang{
+    border-radius: 10px;
+    background: rgba(35, 84, 243, 0.5);
+}
+body{
+    background: url('../images/du-lieu-on-chain-la-gi.png');
+    background-size: cover;
+    color: antiquewhite;
+}

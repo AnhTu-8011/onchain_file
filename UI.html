@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blockchain Document Storage</title>
+    <link rel="stylesheet" type="text/css" href="UI.css">
+</head>
+<body>
+    <div style="display: flex; justify-content: space-between; align-items: flex-start;">
+        <div class="xacminh" style="width: 30%; border: 1px solid #ccc; padding: 20px; box-shadow: 0 2px 5px rgba(0,0,0,0.2);">
+            <h2>Xác minh tài liệu BlockChain</h2>
+            <input type="file" id="fileInput"><br>
+            <button onclick="verifyFile()">Xác minh tài Liệu</button><br>
+            <button onclick="clearHash()">Xóa mã hash cũ</button><br>  
+            <label for="result">Kết quả xác minh</label><br>
+            <input type="text" id="result" readonly><br>
+            <button onclick="saveToWallet()">Lưu vào MetaMask</button><br>
+            <button id="connect-button">Connect Wallet</button>
+            <!-- <img src="images/du-lieu-on-chain-la-gi.png" alt="Blockchain Image" style="width: 100%; height: auto; margin-bottom: 20px;"> -->
+
+        </div>
+        <div class="bang" style="width: 65%; border: 1px solid #ccc; padding: 20px; box-shadow: 0 2px 5px rgba(0,0,0,0.2);">
+            <h1>Bảng hiển thị File hợp đồng</h1>
+            <table border="1" style="width: 100%; text-align: left;">
+                <thead> 
+                    <tr>
+                        <th>Stt</th>
+                        <th>Tên File</th>
+                        <th>Mã Hash</th>
+                        <th>Kết quả</th>
+                    </tr>
+                </thead>  
+                <tbody id="fileTableBody">
+
+                </tbody>
+            </table>
+        </div>
+        <script src="https://cdn.jsdelivr.net/npm/web3@latest/dist/web3.min.js"></script>
+        <script src="main.js"></script>
+        <script src="wallet.js"></script>
+        <script src="contract.js"></script>
+    </div>
+</body>
+</html>
